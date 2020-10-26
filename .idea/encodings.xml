@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service/src/main/java/com/rsq/wind/master/dao/mapper.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/service/src/main/java/com/rsq/wind/slave/dao/mapper.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/serviceinterface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web" charset="UTF-8" />
+  </component>
+</project>

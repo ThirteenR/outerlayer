@@ -1,0 +1,31 @@
+server:
+  port: 8081
+dubbo:
+  application:
+    name: service    #服务名称
+  registry:
+    protocol: zookeeper     #注册中心的协议
+    address: 192.168.1.114:2181 #注册中心的地址
+  protocol:
+    name: dubbo             #通信协议
+    port: 20880             #通信端口
+  monitor:
+    protocol: registry      #连接监控中心
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    slave:
+      url: jdbc:mysql://192.168.1.124:3306/thirteen?characterEncoding=gbk
+      username: slave
+      password: slave
+    master:
+      url: jdbc:mysql://localhost:3306/thirteen?characterEncoding=gbk
+      username: root
+      password: root
+
+
+mybatis:
+  masterMapperLocations: classpath:com/rsq/wind/master/dao/mapper.xml
+  slaveMapperLocations: classpath:com/rsq/wind/slave/dao/mapper.xml
