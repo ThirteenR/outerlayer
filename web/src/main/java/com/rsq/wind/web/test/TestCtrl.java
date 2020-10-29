@@ -21,7 +21,7 @@ public class TestCtrl {
     @DubboReference
     Master master;
     @RequestMapping("slave")
-    public List<Users> slave(Users u){
+    public Users slave(Users u){
         return slave.test(u);
     }
 

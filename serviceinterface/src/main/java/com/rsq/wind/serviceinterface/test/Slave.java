@@ -9,6 +9,6 @@ import java.util.List;
  * date-time: 2020-10-18 12:20
  **/
 public interface Slave {
-    public List<Users> test(Users u);
+    public Users test(Users u);
 
 }
